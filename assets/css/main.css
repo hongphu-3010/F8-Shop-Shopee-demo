@@ -194,7 +194,7 @@
     /* to dần từ góc trên bên trái và dùng calc để tránh việc sau này width có thay đổi thì vẫn không ảnh hưởng */
     will-change: opacity , transform;     /* Tối ưu chuyển động  */
     animation: headerNotify ease-in 0.25s;
-    z-index: 1;
+    z-index: 2;
     border-radius: 2px;
 }
 /* tạo hình tam giác phần thông báo */
