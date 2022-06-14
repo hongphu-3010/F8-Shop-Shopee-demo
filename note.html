@@ -1,0 +1,57 @@
+<!-- 
+* ctrl + s để tìm kiếm 
+list-style để bỏ dấu chấm trước các thẻ li
+
+* Kết hợp display flex và aligh item center để căn giữa những thằng con nằm bên trong theo chiều dọc
+* Cần tìm hiểu thêm css selector
+* khi thêm display block vào thằng con, nếu thằng con chưa có chiều ngang thì nó sẽ tự động lấy chiều ngang của thằng cha chứa nó\
+* Có thể dùng text align center để căn giữa theo chieu ngan...thử 1 số cách căn giữa sau đây....display flex kết hợp aligh item center hoặc margin auto/ một số trường hợp dùng line high để căn giữa
+* Thẻ h có mặc định margin trên dưới hơi cao
+* Float :right đẩy sang bên phải
+* Dùng lớp giả nth-child(x) x là thằng con thứ x của thằng cha
+* Thẻ ul có mặc định padding left
+* Giả sử như muốn css cho đối tượng con có thể dùng .cha khoảng cách .con
+* Lầm chỉ hiển thị 2 dòng và có dấu 3 chấm ở đằng sau 
+                           font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    margin: 10px;
+    height: 3.6rem;
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+* Dùng aligh item base line để làm cho 2 thằng con có chân ngang nhau
+* Điều chỉnh độ sáng     filter: brightness(60%);
+
+*Tạo 2 phần tam giác nhỏ dưới thẻ giảm giá 
+              content: "";
+    position: absolute;
+    top: 99%;
+    right: 0;
+    border-width: 0 20px 6px;
+    border-style: solid;
+    border-color: rgba(255, 216, 64, 0.94) rgba(255, 216, 64, 0.94) transparent rgba(255, 216, 64, 0.94);
+
+
+* tạo chuyển động khi hover 
+          .home-product-item{
+    background-color: var(--white-color);
+    margin-top: 10px;
+    position: relative;
+    transition: top linear 0.1s;
+    top: 0;
+    border-bottom-right-radius:2px ;
+    border-bottom-left-radius:2px ;
+    box-shadow: 0 1px 2px 0 #757575;
+}
+.home-product-item:hover {
+    top: -2px;
+    box-shadow: 0px 1px 20px 0 #757575;
+}
+* Chia theo cột mới dùng .grid__row
+
+ -->
